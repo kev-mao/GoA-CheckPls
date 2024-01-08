@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CardViewDiners"
+    android:layout_width="match_parent"
+    android:layout_height="170dp">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="351dp"
+        android:layout_height="171dp"
+        android:background="@drawable/diner_screen_white_rectangle"
+        android:elevation="5dp"
+        android:layout_marginBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:text="Name"
+                    android:textColor="#004D49"
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/delete_diner"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="309dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/delete_forever" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/error_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Please input a name."
+                android:textColor="@color/error"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:id="@+id/input_textbox"
+                    android:layout_width="311dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/dinerlist_input_name" />
+
+                <EditText
+                    android:id="@+id/edDinername"
+                    android:layout_width="282dp"
+                    android:layout_height="41dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Name"
+                    android:textColor="#5D5D5D"
+                    android:textColorHint="#8B8B8B"
+                    android:textSize="30sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+            </RelativeLayout>
+
+</RelativeLayout>
+
+

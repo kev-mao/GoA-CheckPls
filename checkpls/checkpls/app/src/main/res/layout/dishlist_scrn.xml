@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+
+    <TextView
+        android:id="@+id/DishListTextView"
+        android:layout_width="169dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="134dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Dish List"
+        android:textColor="#157C4D"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="#157C4D"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/DishListDivider"
+        android:layout_width="351dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/DishListTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DishListRecyclerView"
+        android:layout_width="357dp"
+        android:layout_height="470dp"
+        android:layout_below="@+id/DishListDivider"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="30dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/AddDishButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/DishListRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/green_border_button"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:letterSpacing="0"
+        android:text="Add Dish/Drink"
+        android:textAllCaps="false"
+        android:textColor="#157C4D"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/please_add_dish_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:elevation="-1sp"
+        android:fontFamily="@font/nunito_sans"
+        android:gravity="center"
+        android:text="Please add a dish\n to continue"
+        android:textColor="#5D5D5D"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_background"
+        app:cornerRadius="5dp" />
+
+    <Button
+        android:id="@+id/go_to_tips_button"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/grey_button"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:letterSpacing="0"
+        android:text="Go To Tips"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+
+    <ImageButton
+        android:id="@+id/add_dish_image_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="240dp"
+        app:srcCompat="@drawable/add_dish_icon" />
+
+
+</RelativeLayout>
+
+

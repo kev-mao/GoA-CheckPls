@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dish_list"
+                android:layout_width="231dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="92dp"
+                android:layout_marginTop="13dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Add Dish / Drink"
+                android:textAlignment="center"
+                android:textColor="#157C4D"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/matches_back_button"
+                android:layout_width="56dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Cancel"
+                android:textColor="#157C4D"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="351dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="7dp"
+            android:background="#D1D1D1" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dish_name"
+                        android:layout_width="170dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Dish / Drink Name"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/error_message_dish"
+                        android:layout_width="203dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Please input a dish / drink name."
+                        android:textColor="#FF3030"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/dish_edit_text_box"
+                            android:layout_width="349dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_rectangle"
+                            android:elevation="5sp" />
+
+
+                        <EditText
+                            android:id="@+id/dish_edit_text"
+                            android:layout_width="327dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@android:color/transparent"
+                            android:elevation="5sp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:gravity="top"
+                            android:hint="Dish Name"
+                            android:textSize="24sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="46dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginTop="30dp"
+                        android:elevation="5sp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Price"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/error_message_price"
+                        android:layout_width="203dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Please input a number."
+                        android:textColor="#FF3030"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/price_edit_text_box"
+                            android:layout_width="349dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_rectangle"
+                            android:elevation="5sp" />
+
+
+                        <EditText
+                            android:id="@+id/price_edit_text"
+                            android:layout_width="150dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@android:color/transparent"
+                            android:elevation="5sp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:gravity="top"
+                            android:hint="Price"
+                            android:inputType="numberDecimal"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/cash_symbol"
+                            android:layout_width="15dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="350dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="5sp"
+                            android:text="$"
+                            android:textColor="#5D5D5D"
+                            android:textSize="24dp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="72dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="36dp"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Tax (%)"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/error_message_tax"
+                        android:layout_width="203dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Please input a whole number."
+                        android:textColor="#FF3030"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/tax_edit_text_box"
+                            android:layout_width="349dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/rounded_rectangle"
+                            android:elevation="5sp" />
+
+
+                        <EditText
+                            android:id="@+id/tax_edit_text"
+                            android:layout_width="150dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@android:color/transparent"
+                            android:elevation="5sp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:hint="Tax Percent"
+                            android:inputType="numberDecimal"
+                            android:textSize="24dp" />
+
+                        <TextView
+                            android:id="@+id/percent_symbol"
+                            android:layout_width="23dp"
+                            android:layout_height="33dp"
+                            android:layout_marginStart="346dp"
+                            android:layout_marginTop="25dp"
+                            android:elevation="5sp"
+                            android:text="%"
+                            android:textSize="24dp"
+                            android:textColor="#5D5D5D"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/paid_by"
+                            android:layout_width="82dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="36dp"
+                            android:layout_marginTop="17dp"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:text="Paid By:"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/error_message_paidby"
+                        android:layout_width="150dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="36dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/nunito_sans_semibold"
+                        android:text="Please select a person."
+                        android:textColor="#FF3030"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/AddDishRecyclerView"
+                    android:layout_width="327dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="10dp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginBottom="99dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/addDinerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="655dp"
+        android:background="@drawable/white_background">
+
+        <Button
+            android:id="@+id/add_dish_button"
+            android:layout_width="351dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/green_button"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:letterSpacing="0"
+            android:text="Add Dish / Drink"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
+

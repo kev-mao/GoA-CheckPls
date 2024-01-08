@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+
+    <TextView
+        android:id="@+id/tips_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Tips"
+        android:textColor="#157C4D"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tips_back_button"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Back"
+        android:textColor="#157C4D"
+        android:textSize="18sp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="351dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="71dp"
+        android:background="#D1D1D1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tipRecyclerView"
+        android:layout_width="351dp"
+        android:layout_height="583dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="71dp" />
+
+    <Button
+        android:id="@+id/calculate_and_split"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="681dp"
+        android:background="@drawable/green_button"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Calculate and Split"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        android:letterSpacing="0"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginTop="655dp"
+        android:background="@drawable/white_background" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="351dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="170dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="$00.00"
+                android:textSize="24sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="43dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Tips"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="101dp"
+                android:layout_height="28dp"
+                android:text="(Optional)"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="18dp"
+                android:textColor="#5D5D5D"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/tip_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tip_button1"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:checked="false"
+                    android:text="10%"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textColor="#5D5D5D"
+                    android:gravity="center" />
+
+
+                <RadioButton
+                    android:id="@+id/tip_button2"
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:checked="false"
+                    android:text="15%"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textColor="#5D5D5D" />
+
+                <RadioButton
+                    android:id="@+id/custom_tip_button"
+                    android:layout_width="130dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/radio_button_background"
+                    android:button="@null"
+                    android:checked="false"
+                    android:text="Custom"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:textColor="#5D5D5D" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/custom_tip_header"
+                android:layout_width="202dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Custom Tip Percent"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/error_message"
+                android:layout_width="150dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="*Please input a number"
+                android:textColor="#FF3030"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/tip_textbox"
+                    android:layout_width="319dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="22dp"
+                    android:background="@drawable/rounded_rectangle"
+                    android:elevation="5dp" />
+
+                <EditText
+                    android:id="@+id/input_percent"
+                    android:layout_width="250dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@android:color/transparent"
+                    android:elevation="6dp"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:hint="Tips"
+                    android:inputType="number"
+                    android:textColor="#5D5D5D"
+                    android:textColorHint="#C4C4C4" />
+
+                <TextView
+                    android:id="@+id/percent_symbol"
+                    android:layout_width="18dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="303dp"
+                    android:layout_marginTop="35dp"
+                    android:elevation="6dp"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="%"
+                    android:textColor="#5D5D5D"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="351dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="1dp"
+                    android:background="#A9D6D3" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

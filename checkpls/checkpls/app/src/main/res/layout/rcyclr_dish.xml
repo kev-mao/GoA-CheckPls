@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addDishContainer"
+    android:layout_width="match_parent"
+     android:layout_height="210dp"
+    android:layout_centerHorizontal="true"
+    android:elevation="5sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/dish_list_container"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/diner_screen_white_rectangle"
+        android:elevation="5sp" />
+
+    <TextView
+        android:id="@+id/dish_name_text_view"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:elevation="6sp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Dish Name"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/price_with_tax_text_view"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_list_container"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-125dp"
+        android:elevation="6sp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Price w/ Tax"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish_list_container"
+        android:layout_marginStart="-133dp"
+        android:layout_marginTop="-125dp"
+        android:layout_toEndOf="@+id/dish_list_container"
+        android:elevation="6sp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:paddingEnd="20dp"
+        android:text="Price"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/PaidByTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/green_background"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="-33dp"
+        android:elevation="6sp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Paid By"
+        android:textColor="#004D49"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/paid_by_diner_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PaidByTextView"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="40dp"
+        android:elevation="6sp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="Paid by Diner List"
+        android:textColor="#004D49" />
+
+    <ImageButton
+        android:id="@+id/delete_image_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="65dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-80dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/dish_list_container"
+        android:elevation="6sp"
+        android:src="@drawable/delete_forever" />
+
+    <View
+        android:id="@+id/green_background"
+        android:layout_width="320dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/diner_list_light_green"
+        android:elevation="5dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="195dp"
+    android:layout_height="138dp"
+    android:background="@drawable/recycler_background">
+
+    <TextView
+        android:id="@+id/dish_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="13dp"
+        android:text="Steamed Dumplings"
+        android:textAlignment="center"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:textSize="24dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="55dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Total:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/dish_total"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="98dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="$100"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

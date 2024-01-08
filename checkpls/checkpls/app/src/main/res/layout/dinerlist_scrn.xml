@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowSoftInputMode="stateVisible|adjustResize"
+    android:background="#F7F7F7">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="91dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:text="Diners"
+            android:textAlignment="center"
+            android:textColor="#157C4D"
+            android:textSize="30sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dinerRcyclrView"
+            android:layout_width="361dp"
+            android:layout_height="510dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="82dp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="351dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="61dp"
+            android:background="#D1D1D1" />
+
+        <Button
+            android:id="@+id/addDiner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="595dp"
+            android:background="@drawable/green_border_button"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:letterSpacing="0"
+            android:text="Add Person"
+            android:textAllCaps="false"
+            android:textColor="#157C4D"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            app:cornerRadius="10dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/addDinerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginTop="655dp"
+        android:background="@drawable/white_background">
+
+        <Button
+            android:id="@+id/dishesScrnButton"
+            android:layout_width="351dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_disable_tips"
+            android:fontFamily="@font/nunito_sans_semibold"
+            android:letterSpacing="0"
+            android:text="Go To Dishes &amp; Drinks"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

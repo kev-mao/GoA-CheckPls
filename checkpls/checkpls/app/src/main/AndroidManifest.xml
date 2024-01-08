@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_2_goa">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_2_GOA">
+        <activity
+            android:name=".DinerList_scrn.DinerList"
+
+            android:exported="false" />
+        <activity android:name=".DishList_scrn.DishList"
+            android:exported="false"/>
+        <activity android:name=".AddDish_scrn.AddDish"
+            android:exported="false"/>
+        <activity android:name=".Tips_scrn.Tips"
+            android:exported="false"/>
+        <activity android:name=".Totals_scrn.Totals"
+            android:exported="false"/>
+        <activity
+            android:name=".OnBoarding"
+            android:exported="true" >
+            
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+
+
+    </application>
+
+</manifest>
